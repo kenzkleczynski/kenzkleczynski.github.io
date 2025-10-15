@@ -1,3 +1,25 @@
+/* Import Custom Fonts */
+@font-face {
+    font-family: 'Mighty Souly';
+    src: url('fonts/MightySouly-lxggD.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tropical Calm';
+    src: url('fonts/TrovicalCalmFreeRegular-0vam4.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tropical Calm';
+    src: url('fonts/TrovicalCalmFreeItalic-aYAZx.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
 /* Reset and Base Styles */
 * {
     margin: 0;
@@ -6,7 +28,7 @@
 }
 
 body {
-    font-family: 'Courier New', monospace;
+    font-family: 'Tropical Calm', 'Courier New', sans-serif;
     line-height: 1.6;
     color: #3a3a3a;
     background: #f5f1e8;
@@ -34,6 +56,7 @@ nav {
 }
 
 .logo {
+    font-family: 'Mighty Souly', sans-serif;
     font-size: 2rem;
     font-weight: bold;
     letter-spacing: 3px;
@@ -92,6 +115,7 @@ nav {
 }
 
 .hero-content h1 {
+    font-family: 'Mighty Souly', sans-serif;
     font-size: 4rem;
     margin-bottom: 1rem;
     font-weight: bold;
@@ -139,6 +163,7 @@ nav {
 }
 
 .about h2 {
+    font-family: 'Mighty Souly', sans-serif;
     font-size: 3rem;
     margin-bottom: 2rem;
     text-align: center;
@@ -162,6 +187,7 @@ nav {
 }
 
 .projects h2 {
+    font-family: 'Mighty Souly', sans-serif;
     font-size: 3rem;
     margin-bottom: 3rem;
     text-align: center;
