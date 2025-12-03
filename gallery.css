@@ -1,0 +1,187 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: white;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    padding: 40px;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    color: #0E3D12;
+    font-size: 48px;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+header a {
+    text-decoration: none;
+    color: #0E3D12;
+}
+
+header a:hover {
+    opacity: 0.8;
+}
+
+.underline {
+    width: 100%;
+    max-width: 400px;
+    height: 3px;
+    background: #0E3D12;
+    margin: 0 auto;
+}
+
+/* Back navigation */
+.back-nav {
+    margin-bottom: 40px;
+}
+
+.back-nav a {
+    color: #0E3D12;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.back-nav a:hover {
+    text-decoration: underline;
+}
+
+/* Gallery Grid - 3 columns */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+/* Individual gallery item */
+.gallery-item {
+    text-align: center;
+}
+
+.gallery-item h3 {
+    margin-top: 15px;
+    color: #0E3D12;
+    font-size: 18px;
+}
+
+/* Image container with hover effects */
+.image-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    border: 3px solid #0E3D12;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* Hover effect - subtle pop */
+.image-container:hover {
+    transform: scale(1.07);
+    box-shadow: 0 8px 20px rgba(14, 61, 18, 0.3);
+}
+
+/* Show arrows and dots on hover */
+.image-container:hover .nav-arrow,
+.image-container:hover .dots {
+    opacity: 1;
+}
+
+/* Images */
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Navigation arrows */
+.nav-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(14, 61, 18, 0.8);
+    color: white;
+    border: none;
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.nav-arrow:hover {
+    background: rgba(14, 61, 18, 1);
+}
+
+.nav-arrow.prev {
+    left: 10px;
+}
+
+.nav-arrow.next {
+    right: 10px;
+}
+
+/* Dot indicators */
+.dots {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 10;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.dot.active {
+    background: white;
+}
+
+.dot:hover {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+/* Responsive - 2 columns on tablets */
+@media (max-width: 1024px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Responsive - 1 column on mobile */
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -3,50 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kenz Kleczynski - Home</title>
+    <title>Kenz Kleczynski</title>
     <link rel="stylesheet" href="style.css">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V106KPNHEL"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-V106KPNHEL');
+    </script>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-V106KPNHEL"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-V106KPNHEL');
-</script>
 <body>
-    <!-- Navigation -->
-    <nav>
-        <div class="nav-container">
-            <h1 class="logo">KK</h1>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="creations.html">Creations</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+    <div class="container">
+        <!-- Name at top -->
+        <header>
+            <h1>KENZ KLECZYNSKI</h1>
+            <div class="underline"></div>
+        </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Hi, I'm Kenz Kleczynski</h1>
-            <p>Welcome to my collection</p>
-            <a href="creations.html" class="cta-button">View My Creations</a>
-        </div>
-    </section>
+        <!-- Main content: list and photo side by side -->
+        <main>
+            <nav>
+                <ul>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                </ul>
+            </nav>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Write a brief introduction about yourself here. What do you do? What are you passionate about? What's your story?</p>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Kenz Kleczynski. All rights reserved.</p>
-    </footer>
+            <div class="photo">
+                <img src="images/headshot.JPG" alt="Kenz Kleczynski">
+            </div>
+        </main>
+    </div>
 </body>
 </html>

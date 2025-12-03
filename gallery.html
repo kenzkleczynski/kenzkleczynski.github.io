@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Kenz Kleczynski</title>
+    <link rel="stylesheet" href="gallery.css">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V106KPNHEL"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-V106KPNHEL');
+    </script>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>KENZ KLECZYNSKI</h1>
+            <div class="underline"></div>
+        </header>
+
+        <!-- Back to home link -->
+        <nav class="back-nav">
+            <a href="index.html">← Back to Home</a>
+        </nav>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid">
+            <!-- Project 1: Love Across the USA -->
+            <div class="gallery-item" data-project="Love_Across_the_USA">
+                <div class="image-container">
+                    <img src="images/gallery/Love_Across_the_USA/cover.jpg" alt="Love Across the USA" class="current-image">
+                    
+                    <!-- Navigation arrows (hidden by default) -->
+                    <button class="nav-arrow prev" aria-label="Previous image">‹</button>
+                    <button class="nav-arrow next" aria-label="Next image">›</button>
+                    
+                    <!-- Dot indicators (hidden by default) -->
+                    <div class="dots">
+                        <span class="dot active" data-index="0"></span>
+                        <span class="dot" data-index="1"></span>
+                        <span class="dot" data-index="2"></span>
+                        <span class="dot" data-index="3"></span>
+                        <span class="dot" data-index="4"></span>
+                        <span class="dot" data-index="5"></span>
+                    </div>
+                </div>
+                <a href="https://www.loveacrosstheusa.org/rbg">
+                    <h3>Love Across the USA</h3>
+                </a>
+            </div>
+
+            <!-- Add more projects here in the future -->
+            
+        </div>
+    </div>
+
+    <script src="gallery.js"></script>
+</body>
+</html>
