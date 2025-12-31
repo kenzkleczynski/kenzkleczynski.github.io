@@ -1,0 +1,44 @@
+[
+    {
+        "id": "Love_Across_the_USA",
+        "title": "Love Across the USA",
+        "date": "2024-06-15",
+        "tags": ["crochet", "commission", "public-art"],
+        "description": "Large-scale crochet blanket featuring Ruth Bader Ginsburg",
+        "link": "https://www.loveacrosstheusa.org/rbg",
+        "images": [
+            "images/gallery/Love_Across_the_USA/cover.jpg",
+            "images/gallery/Love_Across_the_USA/two.jpg",
+            "images/gallery/Love_Across_the_USA/three.jpg",
+            "images/gallery/Love_Across_the_USA/four.jpg",
+            "images/gallery/Love_Across_the_USA/five.jpg",
+            "images/gallery/Love_Across_the_USA/six.jpg"
+        ]
+    },
+    {
+        "id": "Grad_Cap",
+        "title": "Grad Cap",
+        "date": "2024-05-10",
+        "tags": ["craft", "personal"],
+        "description": "",
+        "images": [
+            "images/gallery/Grad_Cap/cover.jpg",
+            "images/gallery/Grad_Cap/two.jpg"
+        ]
+    },
+    {
+        "id": "Barbie_Gingerbread",
+        "title": "Barbie Gingerbread House",
+        "date": "2023-12-20",
+        "tags": ["gingerbread", "baking", "personal"],
+        "description": "",
+        "images": [
+            "images/gallery/Barbie_Gingerbread/cover.jpeg",
+            "images/gallery/Barbie_Gingerbread/two.jpeg",
+            "images/gallery/Barbie_Gingerbread/three.jpeg",
+            "images/gallery/Barbie_Gingerbread/four.jpeg",
+            "images/gallery/Barbie_Gingerbread/five.jpeg",
+            "images/gallery/Barbie_Gingerbread/six.jpeg"
+        ]
+    }
+]
